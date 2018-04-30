@@ -33,6 +33,24 @@ public class Problem {
 
     private String tags;
 
+    public Problem() {
+    }
+
+    public Problem(String user_Name, String name, String description, String reason, String subject, String semester,
+            String add_date, String latest_edit_date, Integer redo_times, String answer, String tags) {
+        this.userName = user_Name;
+        this.Name = name;
+        this.Description = description;
+        this.Reason = reason;
+        this.subject = subject;
+        this.semester = semester;
+        this.addDate = add_date;
+        this.latestEditDate = latest_edit_date;
+        this.redoTimes = redo_times;
+        this.answer = answer;
+        this.tags = tags;
+    }
+
     public Integer getID() {
         return problemID;
     }

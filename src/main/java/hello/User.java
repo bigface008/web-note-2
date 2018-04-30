@@ -21,6 +21,17 @@ public class User {
 
     private String userPhone;
 
+    public User() {
+    }
+
+    public User(String user_name, String user_password, String user_type, String user_email, String user_phone) {
+        this.userName = user_name;
+        this.userPassword = user_password;
+        this.userType = user_type;
+        this.userEmail = user_email;
+        this.userPhone = user_phone;
+    }
+
     public Integer getId() {
         return userID;
     }
@@ -56,7 +67,7 @@ public class User {
     public String getPhone() {
         return userPhone;
     }
-    
+
     public void setPhone(String phone) {
         this.userPhone = phone;
     }
